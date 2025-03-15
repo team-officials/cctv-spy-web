@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import VideoBox from './VideoBox';
 
 const CameraFeed = ({ cameraName, status, videoUrl }) => {
   const [isLoading, setIsLoading] = useState(true); // Track if the video is loading
@@ -72,181 +73,60 @@ const Dashboard = () => {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 p-6 overflow-auto">
-        <h2 className="text-3xl font-bold mb-6 text-green-500"> AI Nayeli, Sharjah </h2>
+      <div className="flex-1 p-6 overflow-auto ">
+        <h2 className="text-3xl font-bold mb-6 text-green-500">AI Nayeli, Sharjah</h2>
         <p className="text-red-600 font-bold">1204, AI Nayeli 5 Sharjah</p>
-        <div className="grid grid-cols-3 gap-4">
-          {/* Display multiple CameraFeeds */}
-          {cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
+        <div className='grid  grid-cols-4  gap-5'>
+          <div>
+            <VideoBox />
+          </div>
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-                 {cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
 
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-                 {cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
 
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-                 {cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-                 {cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-
-{cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-                 {cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
-                 {cameras.map((camera, index) => (
-            <CameraFeed
-              cameraName={cameras[activeCamera].name}
-              status={cameras[activeCamera].status}
-              videoUrl={cameras[activeCamera].videoUrl}
-            />
-          ))}
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
+          <div> <VideoBox /></div>
         </div>
       </div>
     </div>
